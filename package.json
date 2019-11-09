@@ -1,10 +1,10 @@
 {
-  "name": "pipe-ts",
+  "name": "piper",
   "version": "1.0.0",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gregor-smith/pipe-ts.git"
+    "url": "https://github.com/gregor-smith/piper.git"
   },
   "author": "Gregor Smith",
   "license": "MIT"
