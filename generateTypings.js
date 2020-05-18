@@ -20,7 +20,7 @@ function declarationStatement(int) {
         next = toUpperCaseCharacter(i + 2)
         lines.push(`\tfunc${character}: (value: ${character}) => ${next},`)
     }
-    lines.push(`): ${next}`)
+    lines.push(`): ${next};`)
     return lines.join('\n')
 }
 
