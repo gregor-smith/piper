@@ -7,5 +7,14 @@
     "url": "https://github.com/gregor-smith/piper.git"
   },
   "author": "Gregor Smith",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "generate-typings": "node ./generateTypings.js"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.2",
+    "jest": "^26.0.1",
+    "ts-jest": "^26.0.0",
+    "typescript": "^3.9.2"
+  }
 }
