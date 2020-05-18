@@ -9,7 +9,8 @@
   "author": "Gregor Smith",
   "license": "MIT",
   "scripts": {
-    "generate-typings": "node ./generateTypings.js"
+    "generate-typings": "node ./generateTypings.js",
+    "test": "jest"
   },
   "devDependencies": {
     "@types/jest": "^25.2.2",
