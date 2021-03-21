@@ -1,5 +1,6 @@
-module.exports = {
+export default {
     testRegex: '\\.test\\.ts$',
-    preset: 'ts-jest',
-    testEnvironment: 'node'
+    moduleNameMapper: {
+        '^(.*)\\.js$': '$1'
+    }
 }
