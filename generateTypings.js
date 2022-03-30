@@ -61,5 +61,5 @@ await pipeline(
             })
         }
     },
-    createWriteStream('./dist/piper.d.ts', 'utf-8')
+    createWriteStream('./src/piper.d.ts', 'utf-8')
 )

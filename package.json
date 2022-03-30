@@ -2,7 +2,7 @@
   "name": "piper",
   "version": "1.0.0",
   "type": "module",
-  "exports": "./dist/piper.js",
+  "exports": "./src/piper.js",
   "sideEffects": false,
   "repository": {
     "type": "git",

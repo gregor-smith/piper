@@ -1,4 +1,4 @@
-import { asyncPipe, pipe } from '../dist/piper.js'
+import { asyncPipe, pipe } from '../src/piper.js.js'
 
 
 test('sync', () => {
@@ -15,7 +15,7 @@ test('async - promise initial value', async () => {
     const value = await asyncPipe(
         Promise.resolve(9000),
         x => Promise.resolve(x + 1),
-        String
+        async x => String(x)
     )
     expect(value).toBe('9001')
 })
@@ -24,7 +24,7 @@ test('async - promise initial value', async () => {
 test('async - non-promise initial value', async () => {
     const value = await asyncPipe(
         9000,
-        x => x + 1,
+        async x => x + 1,
         x => Promise.resolve(String(x))
     )
     expect(value).toBe('9001')
