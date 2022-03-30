@@ -1,6 +1,6 @@
 ## Piper
 
-A tiny pair of pipe function for TypeScript.
+A pair of tiny pipe function for TypeScript.
 
 
 ### Usage
@@ -17,7 +17,7 @@ console.log(a)  // '9001'
 
 const b = await asyncPipe(
     Promise.resolve(9000),
-    x => Promise.resolve(x + 1),
+    async x => x + 1,
     x => Promise.resolve(String(x))
 )
 console.log(b)  // '9001'
